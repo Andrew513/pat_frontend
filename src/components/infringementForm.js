@@ -27,7 +27,7 @@ const InfringementForm = () => {
     setError(null);
     setLoading(true);
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/analyze", {
+      const response = await fetch("https://pat-backend-baddbe1fba67.herokuapp.com/api/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const InfringementForm = () => {
 
   const saveReport = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/saveReport", {
+      const response = await fetch("https://pat-backend-baddbe1fba67.herokuapp.com/api/saveReport", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

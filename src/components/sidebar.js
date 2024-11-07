@@ -8,7 +8,7 @@ const Sidebar = ({ onSelectReport, saveCount }) => {
     useEffect(() => {
         const fetchReports = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/api/reports');
+                const response = await fetch('https://pat-backend-baddbe1fba67.herokuapp.com/api/reports');
                 const reports = await response.json();
                 // console.log('Fetched reports:', reports);
                 setSavedReports(reports);
